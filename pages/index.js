@@ -1,9 +1,14 @@
-import MyApp from './_app';
+import * as React from 'react';
+
+// import ChakraProvider component that will wrap indexjs
+import { ChakraProvider } from '@chakra-ui/react';
 
 export default function Home() {
   return (
-    <div>
-      <h1>Hello World</h1>
-    </div>
+    <ChakraProvider>
+      <div>
+        <h1>Hello World</h1>
+      </div>
+    </ChakraProvider>
   );
 }
